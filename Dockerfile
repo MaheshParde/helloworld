@@ -1,5 +1,5 @@
 FROM openjdk:11
 EXPOSE 8000
-COPY . /tmp
-WORKDIR /tmp
+COPY . /jenkin
+WORKDIR /jenkin
 ENTRYPOINT ["java","-jar","helloworld.jar"]
