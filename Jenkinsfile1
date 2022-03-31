@@ -32,6 +32,16 @@ pipeline {
 			}
 		}
 		
+stage('Registring image') {
+		steps{
+			script{
+				docker.withRegistry('',registryCredential){
+				sh "docker push maheshparde/java-hello-world"
+				}
+			}
+		}
+	}
+
 
   }
 	
