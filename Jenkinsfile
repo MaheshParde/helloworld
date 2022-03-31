@@ -5,7 +5,7 @@ pipeline {
   }
   
 	environment{
-	registry="maheshparde/ava-hello-world"
+	registry="maheshparde/java-hello-world"
 	registryCredential='dockerhub'
 	dockerImage=''
 	}
@@ -26,7 +26,7 @@ pipeline {
  
 	stage('docker Image'){
 		steps{
-		 	sh "maheshparde/ava-hello-world"	
+		 	sh "maheshparde/java-hello-world"	
 			}
 		}
 		
