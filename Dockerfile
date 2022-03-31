@@ -1,4 +1,4 @@
 FROM openjdk:11
-COPY . /tmp
-WORKDIR /tmp
+COPY . /src/main/java
+WORKDIR /src/main/java
 ENTRYPOINT ["java", "helloworld.java"]
