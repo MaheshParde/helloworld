@@ -4,6 +4,12 @@ pipeline {
     maven 'MAVEN_HOME-3.6.3'
   }
   
+	environment{
+	registry="maheshparde/java-hello-world"
+	registryCredential='dockerhub'
+	dockerImage=''
+	}
+	
     //each branch has 1 job running at a time
   options {
     disableConcurrentBuilds()  
@@ -17,6 +23,16 @@ pipeline {
 	}
    
   }
+	
+	stages{
+		stage ('docker Image'){
+		script{
+			 	sh "maheshparde/java-hello-world"	
+			}
+		}
+		
+	}
+	
 	
 }
    
