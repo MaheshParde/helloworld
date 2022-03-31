@@ -17,7 +17,7 @@ pipeline {
 	}
    
     
-  }  
+   
   /*stages {
     stage('Environment Variables') {
       steps {
@@ -38,5 +38,7 @@ pipeline {
     }
     
     }*/
+    
+    }
     
    
