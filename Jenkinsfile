@@ -26,7 +26,7 @@ pipeline {
 	
 	stages{
 		stage ('docker Image'){
-			script{
+			steps{
 			 	sh "maheshparde/java-hello-world"	
 			}
 		}
