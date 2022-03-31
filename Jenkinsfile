@@ -24,10 +24,10 @@ pipeline {
    
   }
 	
-	stages{
-		stage ('docker Image'){
-			steps{
-			 	sh "maheshparde/java-hello-world"	
+  stages{
+	stage ('docker Image'){
+		steps{
+		 	sh "maheshparde/java-hello-world"	
 			}
 		}
 		
