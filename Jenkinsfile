@@ -12,7 +12,7 @@ pipeline {
   stages{
 	stage('Git') {
 		steps{
-		git 'https://github.com/MaheshParde/react-calculator.git'
+		git 'https://github.com/MaheshParde/helloworld.git'
 		}	
 	}
    
