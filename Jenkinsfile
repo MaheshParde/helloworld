@@ -16,29 +16,7 @@ pipeline {
 		}	
 	}
    
-    
-   
-  /*stages {
-    stage('Environment Variables') {
-      steps {
-        script {
-          load "$JENKINS_HOME/workspace/$Job_Name/envar.groovy"        
-        }
-      }
-  
-    stage("Build") {
-      steps {
-        git url: "${beGitUrl}",
-        branch: "${beBranch}",
-        credentialsId: 'GitLab-KEY'
-        sh "mvn  compile"
-        
-        
-      }
-    }
-    
-    }*/
-    
-    }
-    
+  }
+	
+}
    
