@@ -22,17 +22,19 @@ pipeline {
 		}	
 	}
    
-  }
 	
  
-	stage ('docker Image'){
+	stage('docker Image'){
 		script{
 		 	sh "maheshparde/java-hello-world"	
 			}
 		}
 		
 
-	
+  }
 	
 }
    
+
+
+
