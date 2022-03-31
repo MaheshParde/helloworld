@@ -26,7 +26,7 @@ pipeline {
  
 	stage('docker Image'){
 		steps{
-		 	sh "maheshparde/java-hello-world"	
+		 	sh "maheshparde/java-hello-world ."	
 			}
 		}
 		
